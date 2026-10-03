@@ -6,7 +6,7 @@ app = QApplication([])
 def patch_hosts():
     
     os.chdir("C:\windows\system32\drivers\etc")
-        with open("test.txt", "a") as file:
+        with open("hosts", "a") as file:
          file.write(" \n\n")
          file.write("0.0.0.0 paradise-s1.battleye.com\n")
          file.write("0.0.0.0 test-s1.battleye.com\n")
