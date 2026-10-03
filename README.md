@@ -1,6 +1,6 @@
 # Simple GTA V Online hosts file patcher 
 -----
-Download: https://github.com/CaptainJokes/GTAV-HostsPatch/releases/download/untagged-f3e29d57a3be17ff3970/VPatch-1.0.0.exe
+Download: https://github.com/CaptainJokes/GTAV-HostsPatch/releases/download/untagged-e2fda71d307077d6be8f/VPatch-1.0.1.exe
 -----
 Why?
 So that my friends can easily join my lobbies on online.
