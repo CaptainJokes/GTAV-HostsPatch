@@ -5,27 +5,22 @@ app = QApplication([])
 
 def patch_hosts():
     
-    os.chdir("C:\windows\system32\drivers\etc")
-        with open("hosts", "a") as file:
-         file.write(" \n\n")
-         file.write("0.0.0.0 paradise-s1.battleye.com\n")
-         file.write("0.0.0.0 test-s1.battleye.com\n")
-         file.write("0.0.0.0 paradiseenhanced-s1.battleye.com")
+    os.chdir("C:\\windows\system32\drivers\etc")
+    with open("test.txt", "a") as file:
+     file.write(" \n\n")
+     file.write("0.0.0.0 paradise-s1.battleye.com\n")
+     file.write("0.0.0.0 test-s1.battleye.com\n")
+     file.write("0.0.0.0 paradiseenhanced-s1.battleye.com")
     button.setText("Patched!")
+    print("patched")
 
 def unpatch_hosts():
-    print("Goodbye!")
-    os.chdir("C:\windows\system32\drivers\etc")
-    with open("hosts", "a") as file:
-     file.
+    os.chdir("C:\\windows\system32\drivers\etc")
+    with open("hosts", "w") as file:
+        file.write ("#127.0.0.1 localhost")
+     
     button.setText("Unpatched!")
-
-def test_edit():
-    with open("test.txt", "a") as file:
-        file.write(" \n\n")
-        file.write("0.0.0.0 paradise-s1.battleye.com\n")
-        file.write("0.0.0.0 test-s1.battleye.com\n")
-        file.write("0.0.0.0 paradiseenhanced-s1.battleye.com")
+    print("unpatched")
 
 
 # Window settings
@@ -43,14 +38,10 @@ button.clicked.connect(patch_hosts)
 unpatchbutton = QPushButton("Unpatch!", parent=window)
 unpatchbutton.setCheckable(True)
 unpatchbutton.clicked.connect(unpatch_hosts)
-testbutton = QPushButton("Test", parent=window)
-testbutton.setCheckable(True)
-testbutton.clicked.connect(test_edit)
 
 layout.addWidget(label)
 layout.addWidget(button)
 layout.addWidget(unpatchbutton)
-layout.addWidget(testbutton)
 
 window.show()
 
