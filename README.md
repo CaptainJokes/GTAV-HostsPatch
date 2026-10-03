@@ -1,5 +1,5 @@
 # Simple GTA V Online hosts file patcher 
--
+-----
 Download: https://github.com/CaptainJokes/GTAV-HostsPatch/releases/download/untagged-f3e29d57a3be17ff3970/VPatch-1.0.0.exe
 -----
 Why?
