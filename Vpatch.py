@@ -7,7 +7,7 @@ def patch_hosts():
     
     os.chdir("C:\\windows\system32\drivers\etc")
     with open("hosts", "w") as file:
-     file.write(" \n\n0.0.0.0 paradise-s1.battleye.com\n0.0.0.0 test-s1.battleye.com\n0.0.0.0 paradiseenhanced-s1.battleye.com")
+     file.write("0.0.0.0 paradise-s1.battleye.com\n0.0.0.0 test-s1.battleye.com\n0.0.0.0 paradiseenhanced-s1.battleye.com")
     button.setText("Patched!")
     print("patched")
     
@@ -23,7 +23,7 @@ def unpatch_hosts():
 
 # Window settings
 window = QWidget()
-window.setWindowTitle("VPatch 1.0.1")
+window.setWindowTitle("VPatch 1.0.2")
 window.setGeometry(50,50, 500, 500)
 
 layout = QVBoxLayout(window)
