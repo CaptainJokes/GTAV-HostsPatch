@@ -37,11 +37,9 @@ unpatchbutton = QPushButton("Unpatch!", parent=window)
 unpatchbutton.setCheckable(True)
 unpatchbutton.clicked.connect(unpatch_hosts)
 warnlabel = QLabel("<h1>CLOSE GTA V BEFORE PATCHING/UNPATCHING!</h1>", parent=window)
-warlabel2 = QLabel("<h1>DO NOT PRESS PATCH MULTIPLE TIMES!</h1>")
 
 layout.addWidget(label)
 layout.addWidget(warnlabel)
-layout.addWidget(warlabel2)
 layout.addWidget(button)
 layout.addWidget(unpatchbutton)
 
