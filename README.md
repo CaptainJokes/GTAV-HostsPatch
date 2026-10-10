@@ -9,5 +9,5 @@ Running from source:
 Install PyQt6 and qtwidgets.
 
 HOW TO USE:
-# WARNING, DO NOT PRESS PATCH MULTIPLE TIMES!!!!!!
+# Close GTA before patching!
 https://github.com/user-attachments/assets/9574e527-2ad9-4cdd-904a-9e5df31ba392
